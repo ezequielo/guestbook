@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 {% autoescape true %}
 <html>
-  <body>
-    
+<head>
+  <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+
+
+<body>
+
   {% for greeting in greetings %}
   {% if greeting.author %}
   <b>{{ greeting.author.nickname() }}</b> wrote:

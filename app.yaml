@@ -6,6 +6,10 @@ threadsafe: true
 
 # [START handlers]
 handlers:
+
+- url: /stylesheets
+  static_dir: stylesheets
+
 - url: /.*
   script: guestbook.application
 # [END handlers]
